@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+deny from 159.89.198.136
+deny from 94.242.54.113
+deny from 46.148.19.54
+deny from 114.142.173.47
+deny from 104.131.149.148
+deny from 159.89.198.105
+deny from 159.89.198.139
+deny from 101.226.33.227
+deny from 49.44.122.39
+deny from 84.125.95.40
